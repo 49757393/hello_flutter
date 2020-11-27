@@ -1,0 +1,45 @@
+CREATE TABLE `xunjian` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT ,
+  `owner` varchar(100) NOT NULL ,
+  `oper_time` datetime NOT NULL ,
+  `ups1` varchar(100) DEFAULT NULL,
+  `ups2` varchar(100) DEFAULT NULL,
+  `ups3` varchar(100) DEFAULT NULL,
+  `ups4` varchar(100) DEFAULT NULL,
+  `aircondition1` varchar(100) DEFAULT NULL,
+  `aircondition2` varchar(100) DEFAULT NULL,
+  `gpyl` int DEFAULT NULL,
+  `jkzhwg` int DEFAULT NULL,
+  `xfmkg` int DEFAULT NULL,
+  `xfzsd` int DEFAULT NULL,
+  `xfss` int DEFAULT NULL,
+  `stmhq` int DEFAULT NULL,
+  `zyyqhxq` int DEFAULT NULL,
+  `zjyyxqk` int DEFAULT NULL,
+  `zjeyxqk` int DEFAULT NULL,
+  `aircondition3` varchar(100) DEFAULT NULL,
+  `aircondition4` varchar(100) DEFAULT NULL,
+  `jgcj` varchar(100) DEFAULT NULL,
+  `aircondition5` varchar(100) DEFAULT NULL,
+  `aircondition6` varchar(100) DEFAULT NULL,
+  `aircondition7` varchar(100) DEFAULT NULL,
+  `aircondition8` varchar(100) DEFAULT NULL,
+  `aircondition9` varchar(100) DEFAULT NULL,
+  `aircondition10` varchar(100) DEFAULT NULL,
+  `zjgcj1` varchar(100) DEFAULT NULL,
+  `zjgcj2` varchar(100) DEFAULT NULL,
+  `zjgcj3` varchar(100) DEFAULT NULL,
+  `zjgcj4` varchar(100) DEFAULT NULL,
+  `observ` int DEFAULT NULL,
+  `comment` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 
+
+
+ CREATE TABLE `user` (
+  `phone` varchar(20) CHARACTER SET latin1 DEFAULT NULL,
+  `passwd` varchar(128) CHARACTER SET latin1 DEFAULT NULL,
+  `user_name` varchar(30) DEFAULT NULL,
+  `flag` tinyint(4) DEFAULT NULL,
+  `role` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
